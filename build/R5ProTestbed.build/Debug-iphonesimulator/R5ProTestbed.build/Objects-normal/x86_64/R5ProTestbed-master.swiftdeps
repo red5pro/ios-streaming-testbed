@@ -1,0 +1,19 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "a9072a3799d08b8ca5f114c5de0f7805"
+build_time: [509064085, 147022000]
+inputs:
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Testbed.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/DetailViewController.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/AppDelegate.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/PublishOrientationTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/SubscribeAspectRatioTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/SubscriberBandwidthTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/PublishStreamImageTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/AdaptiveBitrateControllerTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/SubscribeTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/PublishTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/CameraSwapTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Tests/BaseTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/MasterViewController.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/SubscribeStreamImageTest.swift": !dirty [509063977, 0]
+  "/Users/davidHeimann/Documents/git/red5pro-core-streaming-library/ios/R5ProTestbed/R5ProTestbed/Home.swift": !dirty [509063977, 0]
