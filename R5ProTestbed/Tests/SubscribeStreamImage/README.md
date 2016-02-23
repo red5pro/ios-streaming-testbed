@@ -3,7 +3,7 @@
 `R5Stream.getStreamImage` allows the user to capture a screenshot of the stream at any time.
 
 ###Example Code
-- ***[BaseTest.swift](../BaseTest.Swift)***
+- ***[BaseTest.swift](../BaseTest.swift)***
 - ***[SubscribeStreamImageTest.swift](SubscribeStreamImageTest.swift)***
 
 ##Running the example

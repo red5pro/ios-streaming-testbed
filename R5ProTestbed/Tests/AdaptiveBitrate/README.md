@@ -3,7 +3,8 @@
 This example demonstrates the AdaptiveBitrateController, which provides a mechanism to dynamically adjust the video publishing bitrate to adjust quality to meet the bandwidth restrictions of the network connection or encoding hardware.
 
 ###Example Code
-- ***[AdaptiveBitrateControllerTest.swift](https://github.com/red5pro/ios-streaming-testbed/tree/master/R5ProTestbed/Tests/AdaptiveBitrate/AdaptiveBitrateControllerTest.swift)***
+- ***[BaseTest.swift](../BaseTest.swift)***
+- ***[AdaptiveBitrateControllerTest.swift](AdaptiveBitrateControllerTest.swift)***
 
 ###Setup
 The AdaptiveBitrateController is simple to setup.  You simply create a new instance of the controller and attach the stream you wish to control.  It will monitor the stream and make all adjustments automatically for you.
@@ -14,7 +15,7 @@ let controller = R5AdaptiveBitrateController()
 controller.attachToStream(self.publishStream!)
 ```
 <sup>
-[AdaptiveBitrateExample.mm #32](https://github.com/red5pro/ios-streaming-testbed/tree/master/R5ProTestbed/Tests/AdaptiveBitrate/AdaptiveBitrateControllerTest.swift#L32)
+[AdaptiveBitrateExample.mm #32](AdaptiveBitrateControllerTest.swift#L32)
 </sup>
 
 The controller will continuously adjust the video bitrate until the stream has closed.
@@ -26,7 +27,7 @@ The AdaptiveBitrateController will dynamically adjust the video bitrate between 
 let camera = R5Camera(device: videoDevice, andBitRate: Int32(Testbed.getParameter("bitrate") as! Int))
 ```
 <sup>
-[BaseTest.swift #85](https://github.com/red5pro/ios-streaming-testbed/tree/master/R5ProTestbed/Tests/BaseTest.swift#L85)
+[BaseTest.swift #85](../BaseTest.swift#L85)
 </sup>
 
 

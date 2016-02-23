@@ -4,7 +4,7 @@ This is the basic starter example on publishing to a Red5 Pro stream.
 
 ###Example Code
 - ***[BaseTest.swift](../BaseTest.swift)***
-- ***[PublishTest.swift](PublishTest.Swift)***
+- ***[PublishTest.swift](PublishTest.swift)***
 
 
 ##How to Publish

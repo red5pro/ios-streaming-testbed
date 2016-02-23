@@ -3,7 +3,7 @@
 `onStreamStatus` is a method called by the R5Stream on its assigned `R5StreamDelegate` object. This function allows a developer to gain status information events to monitor the stream.
 
 ###Example Code
-- ***[BaseTest.swift](../BaseTest.Swift)***
+- ***[BaseTest.swift](../BaseTest.swift)***
 - ***[SubscriberBandwidthTest.swift](SubscriberBandwidthTest.swift)***
 
 ##Running the example
