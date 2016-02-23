@@ -53,8 +53,7 @@ class PublishStreamImageTest: BaseTest {
     func handleSingleTap(recognizer : UITapGestureRecognizer) {
 
         
-        uiv!
-            .image = self.publishStream?.getStreamImage();
+        uiv!.image = self.publishStream?.getStreamImage();
    
     }
 
