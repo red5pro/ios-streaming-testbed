@@ -12,9 +12,9 @@ Touch the screen at any time while streaming to rotate the video source by 90 de
 ##Using R5Camera.orientation
 `R5Camera.orientation` will tell you how much the current video source is rotated from what how it's coming into the application. By getting the instance of R5Camera attached to the R5Stream object and changing its orientation property, this can be modified live for the stream. Once streaming, simply call:
 
-```Swift
-let cam = self.publishStream?.getVideoSource() as! R5Camera
-        
+```
+Swift
+let cam = self.publishStream?.getVideoSource() as! R5Camera        
 cam.orientation = cam.orientation + 90
 ```
 <sub>

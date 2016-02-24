@@ -22,7 +22,8 @@ r5_scale_fill: scale to fill view (will not respect aspect ratio of video)
 
 By default, this value is `r5_scale_to_fill` This example handles scalemode by raw value in order to cycle through its values when it receives a tap.
 
-```Swift
+```
+Swift
 var nextMode = (currentView?.scaleMode.rawValue)! + 1;
 //A value of 3 or larger won't parse correctly to the enum, so it's reset to 0
 if(nextMode == 3){

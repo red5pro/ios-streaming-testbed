@@ -12,7 +12,8 @@ Publishing to a Red5 Pro stream requires a few components to function fully.
 ####Setup R5Connection
 The R5Connection manages the connection that the stream utilizes.  You will need to setup a configuration and intialize a new connection.
 
-```Swift
+```
+Swift
 func getConfig()->R5Configuration{
 	// Set up the configuration
 	let config = R5Configuration()
@@ -28,7 +29,8 @@ func getConfig()->R5Configuration{
 [BaseTest.swift #50](../BaseTest.swift#L50)
 </sup>
    
-```Swift 
+```
+Swift 
 let config = getConfig()
 // Set up the connection and stream
 let connection = R5Connection(config: config)
@@ -40,7 +42,8 @@ let connection = R5Connection(config: config)
 ####Setup R5Stream
 The `R5Stream` handles both subscribing and publishing.  Creating one simply requires the connection already created.
 
-```Swift
+```
+Swift
 //Create our new stream that will utilize that connection
 self.publishStream = R5Stream(connection: connection)
 //Setup our listener to handle events from this stream
@@ -55,7 +58,8 @@ The `R5StreamDelegate` that is assigned to the `R5Stream` will receive status ev
 ####Attach a Video Source
 The R5Stream will need a video and/or audio source to stream from.  To attach a video source, you will need to create an `R5Camera` with the `AVCaptureDevice` you wish to stream from.
 
-```Swift
+```
+Swift
 //Use the last device in the list of available cameras
 let videoDevice = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo).last as? AVCaptureDevice 
 /Create an R5Camera with that device and specify the max bitrate to allow
@@ -80,7 +84,8 @@ self.publishStream!.attachVideo(camera)
 ####Attach an Audio Source
 To add audio to a stream a `R5Microphone` object can be attached.  It behaves similarly to `R5Camera`, but requires `R5Stream.attachAudio` instead.
 
-```Swift
+```
+Swift
 //Setup a new R5Microphone for streaming audio with that device
 let audioDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
 let microphone = R5Microphone(device: audioDevice)
@@ -99,9 +104,10 @@ The `R5VideoViewController` will present publishing streams as well as subscribe
 
 ***This is not required to publish - but allows for previewing the stream.***
 
-A `R5VideoViewController` can be set on any UIViewController, or created programmatically
+An `R5VideoViewController` can be set on any UIViewController, or created programmatically
 
-```Swift
+```
+Swift
 let r5View : R5VideoViewController = getNewR5VideoViewController(self.view.frame);
 self.addChildViewController(r5View);
 ```
@@ -111,20 +117,21 @@ self.addChildViewController(r5View);
 
 To view the preview before publishing has started, use `R5VideoViewController.showPreview`.
 
-```Swift
-view.addSubview(r5View.view)
-
+```
+Swift
+view.addSubview(r5View.view)  
 r5View.showPreview(true)
-
 r5View.showDebugInfo(true)
 ```
+
 <sup>
 [BaseTest.swift #121](../BaseTest.swift#L121)
 </sup>
 
 Lastly, we attach the Stream to the R5VideoView to see the streaming content.
 
-```Swift
+```
+Swift
 self.currentView!.attachStream(publishStream!)
 ```
 <sup>
@@ -134,7 +141,8 @@ self.currentView!.attachStream(publishStream!)
 ####Start Publishing
 The `R5Stream.publish` method will establish the server connection and begin publishing.  
 
-```Swift
+```
+Swift
 self.publishStream!.publish(Testbed.getParameter("stream1") as! String, type: R5RecordTypeLive)
 ```
 <sup>
@@ -148,4 +156,4 @@ The *type* parameter tells the server the recording mode to use on the server.
 - **R5RecordTypeAppend** - Stream and append the recording to any existing save.
 
 ####View your stream
-Open a browser window and navigate to http://your_red5_pro_server_ip:5080//live/streams.jsp to see a list of active streams. Click on the _flash version to subscribe to your stream.
+Open a browser window and navigate to http://your_red5_pro_server_ip:5080//live/subscribe.jsp to see a list of active streams. Click on the _flash version to subscribe to your stream.

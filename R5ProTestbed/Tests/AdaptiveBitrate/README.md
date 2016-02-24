@@ -7,7 +7,7 @@ This example demonstrates the AdaptiveBitrateController, which provides a mechan
 - ***[AdaptiveBitrateControllerTest.swift](AdaptiveBitrateControllerTest.swift)***
 
 ###Setup
-The AdaptiveBitrateController is simple to setup.  You simply create a new instance of the controller and attach the stream you wish to control.  It will monitor the stream and make all adjustments automatically for you.
+The AdaptiveBitrateController is easy to set up.  You simply create a new instance of the controller and attach the stream you wish to control.  It will monitor the stream and make all adjustments automatically for you.
 
 
 ```Swift

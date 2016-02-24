@@ -12,7 +12,8 @@ Subscribing to a Red5 Pro stream requires a few components to function fully.
 ####Setup R5Connection
 The R5Connection manages the connection that the stream utilizes.  You will need to setup a configuration and intialize a new connection.
 
-```Swift
+```
+Swift
 func getConfig()->R5Configuration{
 	// Set up the configuration
 	let config = R5Configuration()
@@ -28,7 +29,8 @@ func getConfig()->R5Configuration{
 [BaseTest.swift #50](../BaseTest.swift#L50)
 </sup>
    
-```Swift 
+```
+Swift 
 let config = getConfig()
 // Set up the connection and stream
 let connection = R5Connection(config: config)
@@ -40,7 +42,8 @@ let connection = R5Connection(config: config)
 ####Setup R5Stream
 The `R5Stream` handles both subscribing and publishing.  Creating one simply requires the connection already created.
 
-```Swift
+```
+Swift
 //Create our new stream that will utilize that connection
 self.publishStream = R5Stream(connection: connection)
 //Setup our listener to handle events from this stream
@@ -58,7 +61,8 @@ The `R5VideoViewController` will present publishing streams as well as subscribe
 
 A `R5VideoViewController` can be set on any UIViewController, or created programmatically
 
-```Swift
+```
+Swift
 let r5View : R5VideoViewController = getNewR5VideoViewController(self.view.frame);
 self.addChildViewController(r5View);
 ```
@@ -68,7 +72,8 @@ self.addChildViewController(r5View);
 
 To view the preview before publishing has started, use `R5VideoViewController.showPreview`.
 
-```Swift
+```
+Swift
 view.addSubview(r5View.view)
 
 r5View.showPreview(true)
@@ -81,7 +86,8 @@ r5View.showDebugInfo(true)
 
 Lastly, we attach the Stream to the R5VideoView to see the streaming content.
 
-```Swift
+```
+Swift
 currentView?.attachStream(subscribeStream)
 ```
 <sup>
@@ -91,7 +97,9 @@ currentView?.attachStream(subscribeStream)
 ####Start Subscribing
 The `R5Stream.Subscribe` method will establish the server connection and begin Subscribing.  
 
-```Swift   self.subscribeStream!.play(Testbed.getParameter("stream1") as! String)
+```
+Swift   
+self.subscribeStream!.play(Testbed.getParameter("stream1") as! String)
 ```
 <sup>
 [SubscribeTest.swift #37](SubscribeTest.swift#L37)
