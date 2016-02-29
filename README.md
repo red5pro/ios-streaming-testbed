@@ -27,7 +27,7 @@ Once you have modified your settings, you can run the application for simulator 
 | **[ABR](R5ProTestbed/Tests/AdaptiveBitrate)**
 | *A high bitrate publisher with AdaptiveBitrateController* 
 |
-| **[Stream Image](R5ProTestbed/Tests/PublishStreamImage)**
+| **[Stream Image (capture)](R5ProTestbed/Tests/PublishStreamImage)**
 | *Touch the publish stream to take a screen shot that is displayed!*  
 |
 | **[Camera Swap](R5ProTestbed/Tests/CameraSwap)**
@@ -38,7 +38,7 @@ Once you have modified your settings, you can run the application for simulator 
 
 ###[Subscribing](R5ProTestbed/Tests/Subscribe)
 
-| **[Stream Image](R5ProTestbed/Tests/SubscribeStreamImage)**                 
+| **[Stream Image (capture)](R5ProTestbed/Tests/SubscribeStreamImage)**                 
 | :-----
 | *Touch the subscribe stream to take a screen shot that is displayed!* 
 |
