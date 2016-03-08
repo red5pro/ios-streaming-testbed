@@ -19,9 +19,9 @@
 		<key>context</key>
 		<string>live</string>
 		<key>camera_width</key>
-		<integer>640</integer>
+		<integer>320</integer>
 		<key>camera_height</key>
-		<string>480</string>
+		<string>240</string>
 	</dict>
 	<key>Tests</key>
 	<dict>
@@ -58,7 +58,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<integer>4800</integer>
+				<integer>1200</integer>
 			</dict>
 			<key>name</key>
 			<string>Publish - 1200</string>
@@ -72,7 +72,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<integer>1200</integer>
+				<integer>4800</integer>
 			</dict>
 			<key>name</key>
 			<string>Publish - ABR</string>
@@ -86,7 +86,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<integer>1200</integer>
+				<integer>256</integer>
 			</dict>
 			<key>name</key>
 			<string>Publish - StreamImage</string>
@@ -100,7 +100,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<integer>1200</integer>
+				<integer>256</integer>
 			</dict>
 			<key>name</key>
 			<string>Publish - Camera Swap</string>
@@ -114,7 +114,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<integer>1200</integer>
+				<integer>256</integer>
 			</dict>
 			<key>name</key>
 			<string>Publish - Orientation Change</string>
