@@ -5,7 +5,7 @@ This example shows how to easily subscribe to a Red5 Pro stream.
 ###Example Code
 
 - ***[BaseTest.swift](../BaseTest.swift)***
-- ***[PublishTest.swift](SubscribeTest.swift)***
+- ***[SubscribeTest.swift](SubscribeTest.swift)***
 
 ##How to Subscribe
 Subscribing to a Red5 Pro stream requires a few components to function fully.

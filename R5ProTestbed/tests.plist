@@ -25,20 +25,6 @@
 	</dict>
 	<key>Tests</key>
 	<dict>
-		<key>subscribe - Stream Image </key>
-		<dict>
-			<key>description</key>
-			<string>Touch the subscribe stream to take a screen shot that is displayed!</string>
-			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>1200</integer>
-			</dict>
-			<key>name</key>
-			<string>Subscribe -  StreamImage</string>
-			<key>class</key>
-			<string>SubscribeStreamImageTest</string>
-		</dict>
 		<key>publish</key>
 		<dict>
 			<key>LocalProperties</key>
@@ -79,7 +65,7 @@
 			<key>class</key>
 			<string>AdaptiveBitrateControllerTest</string>
 		</dict>
-		<key>publish - Stream Image</key>
+		<key>publish - Image Capture</key>
 		<dict>
 			<key>description</key>
 			<string>Touch the publish stream to take a screen shot that is displayed!</string>
@@ -89,7 +75,7 @@
 				<integer>256</integer>
 			</dict>
 			<key>name</key>
-			<string>Publish - StreamImage</string>
+			<string>Publish - ImageCapture</string>
 			<key>class</key>
 			<string>PublishStreamImageTest</string>
 		</dict>
@@ -132,6 +118,20 @@
 			<string>Subscribe</string>
 			<key>class</key>
 			<string>SubscribeTest</string>
+		</dict>
+		<key>subscribe - Image Capture</key>
+		<dict>
+			<key>description</key>
+			<string>Touch the subscribe stream to take a screen shot that is displayed!</string>
+			<key>LocalProperties</key>
+			<dict>
+				<key>bitrate</key>
+				<integer>1200</integer>
+			</dict>
+			<key>name</key>
+			<string>Subscribe - ImageCapture</string>
+			<key>class</key>
+			<string>SubscribeStreamImageTest</string>
 		</dict>
 		<key>subscribe - BandwidthTest</key>
 		<dict>

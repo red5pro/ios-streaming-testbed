@@ -34,7 +34,7 @@ class BaseTest: UIViewController , R5StreamDelegate {
     
     func closeTest(){
         
-        NSLog("clsoing view")
+        NSLog("closing view")
 
         if( self.publishStream != nil ){
             self.publishStream!.stop()
