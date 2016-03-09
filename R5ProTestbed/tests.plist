@@ -107,6 +107,17 @@
 			<key>class</key>
 			<string>PublishOrientationTest</string>
 		</dict>
+		<key>TwoWay</key>
+		<dict>
+			<key>description</key>
+			<string>Publish and subscribe simultaneously to hold a conversation</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Two Way</string>
+			<key>class</key>
+			<string>TwoWayTest</string>
+		</dict>
 		<key>subscribe</key>
 		<dict>
 			<key>LocalProperties</key>
