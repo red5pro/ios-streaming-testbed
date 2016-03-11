@@ -13,7 +13,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var hostText: UITextField!
     
-    @IBOutlet weak var streamText: UITextField!
+    @IBOutlet weak var stream1Text: UITextField!
+    
+    @IBOutlet weak var stream2Text: UITextField!
+    
     var r5ViewController : BaseTest? = nil
    
     var detailItem: NSDictionary? {
@@ -22,25 +25,37 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
            // self.configureView()
         }
     }
-
-    @IBAction func onStreamNameChange(sender: AnyObject) {
-            Testbed.setStreamName(streamText.text!)
+    
+    @IBAction func onStream1NameChange(sender: AnyObject) {
+        Testbed.setStream1Name(stream1Text.text!)
+    }
+    
+    @IBAction func onStream2NameChange(sender: AnyObject) {
+        Testbed.setStream2Name(stream2Text.text!)
+    }
+    
+    @IBAction func onStreamNameSwap(sender: AnyObject) {
+        Testbed.setStream1Name(stream2Text.text!)
+        Testbed.setStream2Name(stream1Text.text!)
+        stream1Text.text = Testbed.parameters!["stream1"] as? String
+        stream2Text.text = Testbed.parameters!["stream2"] as? String
     }
 
     @IBAction func onHostChange(sender: AnyObject) {
-            Testbed.setHost(hostText.text!)
+        Testbed.setHost(hostText.text!)
     }
+    
     func configureView() {
         // Update the user interface for the detail item.
         
-
-     
         
         hostText.text = Testbed.parameters!["host"] as? String
-        streamText.text  = Testbed.parameters!["stream1"] as? String
+        stream1Text.text = Testbed.parameters!["stream1"] as? String
+        stream2Text.text = Testbed.parameters!["stream2"] as? String
         
         hostText.delegate = self
-        streamText.delegate = self
+        stream1Text.delegate = self
+        stream2Text.delegate = self
         
         if(self.detailItem != nil){
             

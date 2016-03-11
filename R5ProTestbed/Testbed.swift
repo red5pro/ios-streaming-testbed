@@ -49,6 +49,14 @@ class Testbed: NSObject {
         Testbed.parameters?.setValue(name, forKey: "stream1")
     }
     
+    static func setStream1Name(name : String){
+        Testbed.parameters?.setValue(name, forKey: "stream1")
+    }
+    
+    static func setStream2Name(name : String){
+        Testbed.parameters?.setValue(name, forKey: "stream2")
+    }
+    
     static func setLocalOverrides(params : NSMutableDictionary?){
         Testbed.localParameters = params
     }
