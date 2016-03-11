@@ -12,6 +12,7 @@ import R5Streaming
 @objc(TwoWayTest)
 class TwoWayTest: BaseTest {
     var publishView : R5VideoViewController? = nil
+    var timer : NSTimer? = nil
     
     override func viewDidAppear(animated: Bool) {
         
@@ -45,19 +46,11 @@ class TwoWayTest: BaseTest {
         let newFrame = CGRectMake( screenSize.width * (3/5), screenSize.height * (3/5), screenSize.width * (2/5), screenSize.height * (2/5) )
         publishView?.view.frame = newFrame
         
+        self.publishStream?.client = self;
         self.publishStream!.publish(Testbed.getParameter("stream1") as! String, type: R5RecordTypeLive)
-        
-        
-        let button   = UIButton(type: UIButtonType.System) as UIButton
-        button.frame = CGRectMake(0, screenSize.height - 50, 150, 50)
-        button.backgroundColor = UIColor.redColor()
-        button.setTitle("Subscribe", forState: UIControlState.Normal)
-        button.addTarget(self, action: "subscribeHit:", forControlEvents: UIControlEvents.TouchDown)
-        
-        view.addSubview(button)
     }
     
-    func subscribeHit(sender:UIButton!)
+    func subscribeBegin()
     {
         if( subscribeStream == nil )
         {
@@ -72,6 +65,45 @@ class TwoWayTest: BaseTest {
             
             self.subscribeStream!.play(Testbed.getParameter("stream2") as! String)
         }
+    }
+    
+    override func onR5StreamStatus(stream: R5Stream!, withStatus statusCode: Int32, withMessage msg: String!) {
+        
+        if(stream == self.publishStream){
+            
+            if(Int(statusCode) == Int(r5_status_start_streaming.rawValue)){
+                
+                self.timer = NSTimer(timeInterval: 1, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
+                
+            }
+        }
+    }
+    
+    func getStreams (){
+        publishStream?.connection.call("streams.getLiveStreams", withReturn: "onGetLiveStreams", withParam: nil)
+    }
+    
+    func onGetLiveStreams (streams : String){
+        
+        var names : NSArray
+        
+        do{
+            names = try NSJSONSerialization.JSONObjectWithData(streams.dataUsingEncoding(NSUTF8StringEncoding)!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+        } catch _ {
+            self.timer = NSTimer(timeInterval: 2, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
+            return
+        }
+        
+        for i in 0..<names.count {
+            
+            if( Testbed.getParameter("stream2") as! String == names[i] as! String )
+            {
+                subscribeBegin()
+                return
+            }
+        }
+        
+        self.timer = NSTimer(timeInterval: 2, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
     }
     
     func onMetaData(data : String){
