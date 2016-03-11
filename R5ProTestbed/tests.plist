@@ -30,7 +30,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<integer>512</integer>
+				<integer>256</integer>
 			</dict>
 			<key>name</key>
 			<string>Publish</string>
