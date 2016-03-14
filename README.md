@@ -35,18 +35,25 @@ Once you have modified your settings, you can run the application for simulator 
 |
 | **[Orientation](R5ProTestbed/Tests/PublishOrientation)**
 | *Touch the screen to rotate the output video 90 degrees.  Verify with flash, android, or other iOS device running subscribe test that image is rotating properly and no rendering problems occur.* 
+|
+| **[Two Way](R5ProTestbed/Tests/TwoWay)**
+| *An example of simultaneously publishing while subscribing - allowing a conversation. Includes stream detection and auto-connection.*
 
 ###[Subscribing](R5ProTestbed/Tests/Subscribe)
 
-| **[Image Capture](R5ProTestbed/Tests/SubscribeStreamImage)**
-| :-----
-| *Touch the subscribe stream to take a screen shot that is displayed!* 
+| **[Aspect Ratio](R5ProTestbed/Tests/SubscribeAspectRatio)**
+| :----
+| *Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.* 
 |
 | **[Bandwidth Test](R5ProTestbed/Tests/SubscriberBadwidth)**
 | *Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.*  
 |
-| **[Aspect Ratio](R5ProTestbed/Tests/SubscribeAspectRatio)**
-| *Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.* 
+| **[Double Subscriber](R5ProTestbed/Tests/DoubleSubscriber)**
+| *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.*
+|
+| **[Image Capture](R5ProTestbed/Tests/SubscribeStreamImage)**
+| *Touch the subscribe stream to take a screen shot that is displayed!* 
+
      
 ##Notes
 

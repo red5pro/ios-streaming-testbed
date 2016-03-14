@@ -172,6 +172,17 @@
 			<key>class</key>
 			<string>SubscribeAspectRatioTest</string>
 		</dict>
+		<key>subscribe - Double Subscriber</key>
+		<dict>
+			<key>description</key>
+			<string>Allows subscribing to both streams at once</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Double Subscriber</string>
+			<key>class</key>
+			<string>DoubleSubscriber</string>
+		</dict>
 		<key>home</key>
 		<dict>
 			<key>class</key>
