@@ -73,8 +73,7 @@ class TwoWayTest: BaseTest {
             
             if(Int(statusCode) == Int(r5_status_start_streaming.rawValue)){
                 
-                self.timer = NSTimer(timeInterval: 1, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
-                
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
             }
         }
     }
@@ -85,12 +84,14 @@ class TwoWayTest: BaseTest {
     
     func onGetLiveStreams (streams : String){
         
+        NSLog("Got streams: " + streams)
+        
         var names : NSArray
         
         do{
             names = try NSJSONSerialization.JSONObjectWithData(streams.dataUsingEncoding(NSUTF8StringEncoding)!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
         } catch _ {
-            self.timer = NSTimer(timeInterval: 2, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
             return
         }
         
@@ -103,7 +104,7 @@ class TwoWayTest: BaseTest {
             }
         }
         
-        self.timer = NSTimer(timeInterval: 2, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("getStreams"), userInfo: nil, repeats: false)
     }
     
     func onMetaData(data : String){
