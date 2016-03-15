@@ -33,6 +33,7 @@
 		48DFEDDB1C21C5AB0040B624 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DFEDDA1C21C5AB0040B624 /* libstdc++.6.0.9.tbd */; };
 		48DFEDDD1C21E91E0040B624 /* tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48DFEDDC1C21E91E0040B624 /* tests.plist */; };
 		48DFEDDF1C21EA780040B624 /* Testbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFEDDE1C21EA780040B624 /* Testbed.swift */; };
+		924368041C9888F60059BC43 /* RecordedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924368031C9888F60059BC43 /* RecordedTest.swift */; };
 		92554F5E1C77B547003AF9DA /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92554F5D1C77B547003AF9DA /* R5Streaming.framework */; };
 		92724E841C9320FB00998C1C /* TwoWayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92724E831C9320FB00998C1C /* TwoWayTest.swift */; };
 		92C41B841C973FD7002610FA /* DoubleSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C41B831C973FD7002610FA /* DoubleSubscriber.swift */; };
@@ -69,6 +70,7 @@
 		48DFEDDA1C21C5AB0040B624 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		48DFEDDC1C21E91E0040B624 /* tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tests.plist; sourceTree = "<group>"; };
 		48DFEDDE1C21EA780040B624 /* Testbed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Testbed.swift; sourceTree = "<group>"; };
+		924368031C9888F60059BC43 /* RecordedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedTest.swift; path = Tests/Recorded/RecordedTest.swift; sourceTree = "<group>"; };
 		92554F5D1C77B547003AF9DA /* R5Streaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R5Streaming.framework; path = R5ProTestbed/R5Streaming.framework; sourceTree = "<group>"; };
 		92724E831C9320FB00998C1C /* TwoWayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoWayTest.swift; path = Tests/TwoWay/TwoWayTest.swift; sourceTree = "<group>"; };
 		92C41B831C973FD7002610FA /* DoubleSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleSubscriber.swift; path = Tests/DoubleSubscriber/DoubleSubscriber.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				48BF80B21C246F6D000E996E /* SubscribeAspectRatioTest.swift */,
 				4874ECCF1C483FDA002BDA6D /* SubscribeStreamImageTest.swift */,
 				92C41B831C973FD7002610FA /* DoubleSubscriber.swift */,
+				924368031C9888F60059BC43 /* RecordedTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				92C41B841C973FD7002610FA /* DoubleSubscriber.swift in Sources */,
 				48DFEDB01C21BBC60040B624 /* DetailViewController.swift in Sources */,
+				924368041C9888F60059BC43 /* RecordedTest.swift in Sources */,
 				48BF80B31C246F6D000E996E /* SubscribeAspectRatioTest.swift in Sources */,
 				4874D5A31C221CD000A98102 /* ALToastView.m in Sources */,
 				48DFEDAE1C21BBC60040B624 /* MasterViewController.swift in Sources */,

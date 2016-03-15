@@ -93,6 +93,20 @@
 			<key>class</key>
 			<string>CameraSwapTest</string>
 		</dict>
+		<key>publish - Record</key>
+		<dict>
+			<key>description</key>
+			<string>A publish example that records stream data on the server.</string>
+			<key>LocalProperties</key>
+			<dict>
+				<key>bitrate</key>
+				<string>512</string>
+			</dict>
+			<key>name</key>
+			<string>publish - Record</string>
+			<key>class</key>
+			<string>RecordedTest</string>
+		</dict>
 		<key>publish - Orientation</key>
 		<dict>
 			<key>description</key>

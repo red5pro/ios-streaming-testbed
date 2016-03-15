@@ -25,16 +25,19 @@ Once you have modified your settings, you can run the application for simulator 
 | *A high bitrate publisher. Note that this is the publish test with a non-default 'bitrate' value set in tests.plist* 
 |
 | **[ABR](R5ProTestbed/Tests/AdaptiveBitrate)**
-| *A high bitrate publisher with AdaptiveBitrateController* 
-|
-| **[Image Capture](R5ProTestbed/Tests/PublishStreamImage)**
-| *Touch the publish stream to take a screen shot that is displayed!*  
+| *A high bitrate publisher with AdaptiveBitrateController*   
 |
 | **[Camera Swap](R5ProTestbed/Tests/CameraSwap)**
-| *Touch the screen to swap which camera is being used! erify with flash, android, or other iOS device running subscribe test that camera is swapping properly and no rendering problems occur.*  
+| *Touch the screen to swap which camera is being used! erify with flash, android, or other iOS device running subscribe test that camera is swapping properly and no rendering problems occur.* 
+|
+| **[Image Capture](R5ProTestbed/Tests/PublishStreamImage)**
+| *Touch the publish stream to take a screen shot that is displayed!* 
 |
 | **[Orientation](R5ProTestbed/Tests/PublishOrientation)**
-| *Touch the screen to rotate the output video 90 degrees.  Verify with flash, android, or other iOS device running subscribe test that image is rotating properly and no rendering problems occur.* 
+| *Touch the screen to rotate the output video 90 degrees.  Verify with flash, android, or other iOS device running subscribe test that image is rotating properly and no rendering problems occur.*    
+|
+| **[Record](R5ProTestbed/Tests/Recorded)**
+| *A publish example that records stream data on the server.*
 |
 | **[Two Way](R5ProTestbed/Tests/TwoWay)**
 | *An example of simultaneously publishing while subscribing - allowing a conversation. Includes stream detection and auto-connection.*
