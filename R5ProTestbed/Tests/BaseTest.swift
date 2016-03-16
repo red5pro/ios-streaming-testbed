@@ -77,9 +77,6 @@ class BaseTest: UIViewController , R5StreamDelegate {
         
         if(Testbed.getParameter("video_on") as! Bool){
             // Attach the video from camera to stream
-            /////////////
-            // Can we get autorotate and auto choosing bitrate and resolution from network capabilities?
-            /////
             let videoDevice = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo).last as? AVCaptureDevice
             
             let camera = R5Camera(device: videoDevice, andBitRate: Int32(Testbed.getParameter("bitrate") as! Int))
@@ -98,7 +95,6 @@ class BaseTest: UIViewController , R5StreamDelegate {
             self.publishStream!.attachAudio(microphone)
         }
 
-        
     }
     
     override func viewDidLoad() {

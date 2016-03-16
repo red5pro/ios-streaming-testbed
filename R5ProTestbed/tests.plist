@@ -26,7 +26,7 @@
 		<true/>
 		<key>video_on</key>
 		<true/>
-		<key>aduio_on</key>
+		<key>audio_on</key>
 		<true/>
 	</dict>
 	<key>Tests</key>
