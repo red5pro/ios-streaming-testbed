@@ -22,6 +22,12 @@
 		<integer>320</integer>
 		<key>camera_height</key>
 		<string>240</string>
+		<key>debug_view</key>
+		<true/>
+		<key>video_on</key>
+		<true/>
+		<key>aduio_on</key>
+		<true/>
 	</dict>
 	<key>Tests</key>
 	<dict>

@@ -30,7 +30,7 @@ class TwoWayTest: BaseTest {
         
         publishView!.showPreview(true)
         
-        publishView!.showDebugInfo(true)
+        publishView!.showDebugInfo(Testbed.getParameter("debug_view") as! Bool)
         
         // Set up the configuration
         let config = getConfig()
