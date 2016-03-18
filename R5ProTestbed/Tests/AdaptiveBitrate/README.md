@@ -15,7 +15,7 @@ let controller = R5AdaptiveBitrateController()
 controller.attachToStream(self.publishStream!)
 ```
 <sup>
-[AdaptiveBitrateExample.mm #32](AdaptiveBitrateControllerTest.swift#L32)
+[AdaptiveBitrateExample.swift #32](AdaptiveBitrateControllerTest.swift#L32)
 </sup>
 
 The controller will continuously adjust the video bitrate until the stream has closed.

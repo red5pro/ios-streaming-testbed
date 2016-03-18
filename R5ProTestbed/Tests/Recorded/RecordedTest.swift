@@ -1,21 +1,27 @@
 //
-//  AdaptiveBitrateControllerTest.swift
+//  RecordedTest.swift
 //  R5ProTestbed
 //
-//  Created by Andy Zupko on 12/16/15.
-//  Copyright © 2015 Infrared5. All rights reserved.
+//  Created by David Heimann on 3/15/16.
+//  Copyright © 2016 Infrared5. All rights reserved.
 //
 
 import UIKit
 import R5Streaming
 
-@objc(AdaptiveBitrateControllerTest)
-class AdaptiveBitrateControllerTest: BaseTest {
-
+@objc(RecordedTest)
+class RecordedTest: BaseTest {
+    
+    
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
-
+        
+        AVAudioSession.sharedInstance().requestRecordPermission { (gotPerm: Bool) -> Void in
+            
+        };
+        
+        
         setupDefaultR5VideoViewController()
         
         // Set up the configuration
@@ -28,16 +34,10 @@ class AdaptiveBitrateControllerTest: BaseTest {
         
         self.currentView!.attachStream(publishStream!)
         
-        //The Adaptive bitrate controller!
-        let controller = R5AdaptiveBitrateController()
-        controller.attachToStream(self.publishStream!)
-        controller.requiresVideo = Testbed.getParameter("video_on") as! Bool
         
-        
-        self.publishStream!.publish(Testbed.getParameter("stream1") as! String, type: R5RecordTypeLive)
+        self.publishStream!.publish(Testbed.getParameter("stream1") as! String, type: R5RecordTypeRecord)
         
         
         
     }
-
 }

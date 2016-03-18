@@ -87,15 +87,54 @@
                                     <action selector="onStreamNameSwap:" destination="JEX-9P-axG" eventType="touchDown" id="I6W-PD-bqo"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSo-up-enY">
+                                <rect key="frame" x="328" y="354" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onDebugChange:" destination="JEX-9P-axG" eventType="valueChanged" id="PbF-fT-947"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8i-NF-MxH">
+                                <rect key="frame" x="328" y="393" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onVideoChange:" destination="JEX-9P-axG" eventType="valueChanged" id="Z3M-J9-8ws"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Debug View:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW7-CJ-Z2i">
+                                <rect key="frame" x="223" y="359" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Active:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOn-Ij-Clt">
+                                <rect key="frame" x="219" y="398" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-cn-ITe">
+                                <rect key="frame" x="328" y="432" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onAudioChange:" destination="JEX-9P-axG" eventType="valueChanged" id="Xfj-TA-zhw"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio Active:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr4-Gi-i4R">
+                                <rect key="frame" x="220" y="437" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
+                        <outlet property="audioSwitch" destination="ovs-cn-ITe" id="D3v-lS-6Sy"/>
+                        <outlet property="debugSwitch" destination="NSo-up-enY" id="TF9-2b-hgM"/>
                         <outlet property="hostText" destination="O1F-8a-zHi" id="v6l-Xv-eO0"/>
                         <outlet property="stream1Text" destination="4x1-EM-g9v" id="JMw-6z-eAb"/>
                         <outlet property="stream2Text" destination="WJi-W0-Jyd" id="wFS-Qm-5yj"/>
+                        <outlet property="videoSwitch" destination="b8i-NF-MxH" id="cWW-bn-cYt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>

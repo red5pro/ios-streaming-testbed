@@ -22,6 +22,12 @@
 		<integer>320</integer>
 		<key>camera_height</key>
 		<string>240</string>
+		<key>debug_view</key>
+		<true/>
+		<key>video_on</key>
+		<true/>
+		<key>audio_on</key>
+		<true/>
 	</dict>
 	<key>Tests</key>
 	<dict>
@@ -92,6 +98,20 @@
 			<string>Publish - Camera Swap</string>
 			<key>class</key>
 			<string>CameraSwapTest</string>
+		</dict>
+		<key>publish - Record</key>
+		<dict>
+			<key>description</key>
+			<string>A publish example that records stream data on the server.</string>
+			<key>LocalProperties</key>
+			<dict>
+				<key>bitrate</key>
+				<string>512</string>
+			</dict>
+			<key>name</key>
+			<string>publish - Record</string>
+			<key>class</key>
+			<string>RecordedTest</string>
 		</dict>
 		<key>publish - Orientation</key>
 		<dict>
@@ -171,6 +191,17 @@
 			<string>Subscribe Aspect Ratio</string>
 			<key>class</key>
 			<string>SubscribeAspectRatioTest</string>
+		</dict>
+		<key>subscribe - Double Subscriber</key>
+		<dict>
+			<key>description</key>
+			<string>Allows subscribing to both streams at once</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Double Subscriber</string>
+			<key>class</key>
+			<string>DoubleSubscriber</string>
 		</dict>
 		<key>home</key>
 		<dict>
