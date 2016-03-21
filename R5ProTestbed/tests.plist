@@ -106,7 +106,7 @@
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
-				<string>512</string>
+				<integer>256</integer>
 			</dict>
 			<key>name</key>
 			<string>publish - Record</string>
