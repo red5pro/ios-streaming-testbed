@@ -51,6 +51,9 @@ Once you have modified your settings, you can run the application for simulator 
 | **[Bandwidth Test](R5ProTestbed/Tests/SubscriberBadwidth)**
 | *Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.*  
 |
+| **[Cluster](R5ProTestbed/Tests/SubscribeCluster)** 
+| *An example of conecting to a cluster server.*  
+|
 | **[Double Subscriber](R5ProTestbed/Tests/DoubleSubscriber)**
 | *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.*
 |
