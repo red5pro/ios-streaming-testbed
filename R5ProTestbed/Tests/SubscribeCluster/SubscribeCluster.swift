@@ -19,7 +19,7 @@ class SubscribeCluster: BaseTest {
         let urlString = "http://" + (Testbed.getParameter("host") as! String) + ":5080/cluster"
         
         NSURLConnection.sendAsynchronousRequest(
-            NSURLRequest( URL: NSURL(fileURLWithPath: urlString) ),
+            NSURLRequest( URL: NSURL(string: urlString)! ),
             queue: NSOperationQueue(),
             completionHandler:{ (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
             
