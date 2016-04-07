@@ -192,6 +192,17 @@
 			<key>class</key>
 			<string>SubscribeAspectRatioTest</string>
 		</dict>
+		<key>subscribe - Cluster</key>
+		<dict>
+			<key>description</key>
+			<string>An example of conecting to a cluster server.</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Subscribe Cluster</string>
+			<key>class</key>
+			<string>SubscribeCluster</string>
+		</dict>
 		<key>subscribe - Double Subscriber</key>
 		<dict>
 			<key>description</key>
