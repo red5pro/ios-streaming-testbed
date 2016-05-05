@@ -31,7 +31,7 @@ class PublishTest: BaseTest {
         
         setupPublisher(connection)
         // show preview and debug info
-
+       // self.publishStream?.getVideoSource().fps = 2;
         self.currentView!.attachStream(publishStream!)
         
         
