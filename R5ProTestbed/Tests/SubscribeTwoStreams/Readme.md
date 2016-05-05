@@ -3,22 +3,29 @@
 This example demonstrates Subscribing to two different sources at once.
 
 ###Example Code
-- ***[DoubleSubscriber.swift](DoubleSubscriber.swift)***
+- ***[SubscribeTwoStreams.swift](SubscribeTwoStreams.swift)***
 
 - ***[BaseTest.swift](../BaseTest.swift)***
 
 ###Setup
 This is intended to be used with two others using the two-way example to put on a presentation, allowing anyone using this client to watch them converse.
 
-###Managing Views
+###Managing Streams
 
-The only special part of subscribing to two streams at once is handling the size of the views so that you can see both at once. This is done by assigning a CGRect to the `R5VideoController`'s `view.frame`
+The special note to be aware of when it comes to handling two streams is that they each need to use a different audio controller. At the moment, the only ones available are ```R5AudioControllerModeStandardIO``` and ```R5AudioControllerModeEchoCancellation```
 
 ```Swift
-let screenSize = UIScreen.mainScreen().bounds.size
-let s1Frame = CGRectMake( 0, 0, screenSize.width, screenSize.height * (1/2) )
-currentView?.view.frame = s1Frame
+self.subscribeStream!.audioController = R5AudioController(mode: R5AudioControllerModeStandardIO)
 ```
 <sup>
-[DoubleSubscriber.swift #37](DoubleSubscriber.swift#L37)
+[SubscribeTwoStreams.swift #45](SubscribeTwoStreams.swift#L45)
 </sup>
+
+```Swift
+self.subscribeStream2?.audioController = R5AudioController(mode: R5AudioControllerModeEchoCancellation)
+```
+<sup>
+[SubscribeTwoStreams.swift #65](SubscribeTwoStreams.swift#L65)
+</sup>
+
+This means that at this time, iOS can only subscribe to a maximum of two streams, but the process of subscribing to multiple streams is otherwise straightforward.
