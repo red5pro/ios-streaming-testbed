@@ -49,6 +49,8 @@ class PublishOrientationTest: BaseTest {
         
         cam.orientation = cam.orientation + 90
         
+        self.publishStream?.updateStreamMeta()
+        
     }
     
 

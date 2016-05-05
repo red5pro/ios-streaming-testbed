@@ -63,6 +63,12 @@ class SubscribeCluster: BaseTest {
                     
                     //   Start subscribing!!
                     self.subscribeStream!.play(Testbed.getParameter("stream1") as! String)
+                    
+                    let label = UILabel(frame: CGRect(x: 0, y: self.view.frame.height-24, width: self.view.frame.width, height: 24))
+                    label.textAlignment = NSTextAlignment.Left
+                    label.backgroundColor = UIColor.lightGrayColor()
+                    label.text = "Connected to: " + ip!
+                    self.view.addSubview(label)
                 })
             })
         
