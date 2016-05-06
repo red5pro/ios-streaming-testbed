@@ -37,7 +37,6 @@
 		92554F5E1C77B547003AF9DA /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92554F5D1C77B547003AF9DA /* R5Streaming.framework */; };
 		92724E841C9320FB00998C1C /* TwoWayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92724E831C9320FB00998C1C /* TwoWayTest.swift */; };
 		92B15BCA1CA055E5006BEA1D /* SubscribeCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */; };
-		92C41B841C973FD7002610FA /* DoubleSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C41B831C973FD7002610FA /* DoubleSubscriber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +74,6 @@
 		92554F5D1C77B547003AF9DA /* R5Streaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R5Streaming.framework; path = R5ProTestbed/R5Streaming.framework; sourceTree = "<group>"; };
 		92724E831C9320FB00998C1C /* TwoWayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoWayTest.swift; path = Tests/TwoWay/TwoWayTest.swift; sourceTree = "<group>"; };
 		92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeCluster.swift; path = Tests/SubscribeCluster/SubscribeCluster.swift; sourceTree = "<group>"; };
-		92C41B831C973FD7002610FA /* DoubleSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleSubscriber.swift; path = Tests/DoubleSubscriber/DoubleSubscriber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +159,6 @@
 				48BF80AD1C245AA7000E996E /* PublishOrientationTest.swift */,
 				48BF80B21C246F6D000E996E /* SubscribeAspectRatioTest.swift */,
 				4874ECCF1C483FDA002BDA6D /* SubscribeStreamImageTest.swift */,
-				92C41B831C973FD7002610FA /* DoubleSubscriber.swift */,
 				924368031C9888F60059BC43 /* RecordedTest.swift */,
 				92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */,
 			);
@@ -241,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C41B841C973FD7002610FA /* DoubleSubscriber.swift in Sources */,
 				48DFEDB01C21BBC60040B624 /* DetailViewController.swift in Sources */,
 				924368041C9888F60059BC43 /* RecordedTest.swift in Sources */,
 				48BF80B31C246F6D000E996E /* SubscribeAspectRatioTest.swift in Sources */,
