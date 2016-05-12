@@ -31,6 +31,13 @@
 	</dict>
 	<key>Tests</key>
 	<dict>
+		<key>home</key>
+		<dict>
+			<key>class</key>
+			<string>Home</string>
+			<key>name</key>
+			<string>Home</string>
+		</dict>
 		<key>publish</key>
 		<dict>
 			<key>LocalProperties</key>
@@ -71,20 +78,6 @@
 			<key>class</key>
 			<string>AdaptiveBitrateControllerTest</string>
 		</dict>
-		<key>publish - Image Capture</key>
-		<dict>
-			<key>description</key>
-			<string>Touch the publish stream to take a screen shot that is displayed!</string>
-			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>256</integer>
-			</dict>
-			<key>name</key>
-			<string>Publish - ImageCapture</string>
-			<key>class</key>
-			<string>PublishStreamImageTest</string>
-		</dict>
 		<key>publish - Camera Swap</key>
 		<dict>
 			<key>description</key>
@@ -99,19 +92,19 @@
 			<key>class</key>
 			<string>CameraSwapTest</string>
 		</dict>
-		<key>publish - Record</key>
+		<key>publish - Image Capture</key>
 		<dict>
 			<key>description</key>
-			<string>A publish example that records stream data on the server.</string>
+			<string>Touch the publish stream to take a screen shot that is displayed!</string>
 			<key>LocalProperties</key>
 			<dict>
 				<key>bitrate</key>
 				<integer>256</integer>
 			</dict>
 			<key>name</key>
-			<string>publish - Record</string>
+			<string>Publish - ImageCapture</string>
 			<key>class</key>
-			<string>RecordedTest</string>
+			<string>PublishStreamImageTest</string>
 		</dict>
 		<key>publish - Orientation</key>
 		<dict>
@@ -127,16 +120,30 @@
 			<key>class</key>
 			<string>PublishOrientationTest</string>
 		</dict>
-		<key>TwoWay</key>
+		<key>publish - Record</key>
 		<dict>
 			<key>description</key>
-			<string>Publish and subscribe simultaneously to hold a conversation</string>
+			<string>A publish example that records stream data on the server.</string>
+			<key>LocalProperties</key>
+			<dict>
+				<key>bitrate</key>
+				<integer>256</integer>
+			</dict>
+			<key>name</key>
+			<string>publish - Record</string>
+			<key>class</key>
+			<string>RecordedTest</string>
+		</dict>
+		<key>publish - Remote Call</key>
+		<dict>
+			<key>description</key>
+			<string>The publish portion of the remote call example - sends the remote call</string>
 			<key>LocalProperties</key>
 			<dict/>
 			<key>name</key>
-			<string>Two Way</string>
+			<string>Publish - Remote Call</string>
 			<key>class</key>
-			<string>TwoWayTest</string>
+			<string>PublishRemoteCallTest</string>
 		</dict>
 		<key>subscribe</key>
 		<dict>
@@ -149,34 +156,6 @@
 			<string>Subscribe</string>
 			<key>class</key>
 			<string>SubscribeTest</string>
-		</dict>
-		<key>subscribe - Image Capture</key>
-		<dict>
-			<key>description</key>
-			<string>Touch the subscribe stream to take a screen shot that is displayed!</string>
-			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>1200</integer>
-			</dict>
-			<key>name</key>
-			<string>Subscribe - ImageCapture</string>
-			<key>class</key>
-			<string>SubscribeStreamImageTest</string>
-		</dict>
-		<key>subscribe - BandwidthTest</key>
-		<dict>
-			<key>description</key>
-			<string>Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.</string>
-			<key>LocalProperties</key>
-			<dict>
-				<key>buffer_time</key>
-				<integer>1</integer>
-			</dict>
-			<key>name</key>
-			<string>Subscribe - Bandwidth Test</string>
-			<key>class</key>
-			<string>SubscriberBandwidthTest</string>
 		</dict>
 		<key>subscribe - Aspect Ratio</key>
 		<dict>
@@ -192,6 +171,20 @@
 			<key>class</key>
 			<string>SubscribeAspectRatioTest</string>
 		</dict>
+		<key>subscribe - BandwidthTest</key>
+		<dict>
+			<key>description</key>
+			<string>Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.</string>
+			<key>LocalProperties</key>
+			<dict>
+				<key>buffer_time</key>
+				<integer>1</integer>
+			</dict>
+			<key>name</key>
+			<string>Subscribe - Bandwidth Test</string>
+			<key>class</key>
+			<string>SubscriberBandwidthTest</string>
+		</dict>
 		<key>subscribe - Cluster</key>
 		<dict>
 			<key>description</key>
@@ -202,6 +195,31 @@
 			<string>Subscribe - Cluster</string>
 			<key>class</key>
 			<string>SubscribeCluster</string>
+		</dict>
+		<key>subscribe - Image Capture</key>
+		<dict>
+			<key>description</key>
+			<string>Touch the subscribe stream to take a screen shot that is displayed!</string>
+			<key>LocalProperties</key>
+			<dict>
+				<key>bitrate</key>
+				<integer>1200</integer>
+			</dict>
+			<key>name</key>
+			<string>Subscribe - ImageCapture</string>
+			<key>class</key>
+			<string>SubscribeStreamImageTest</string>
+		</dict>
+		<key>subscribe - Remote Call</key>
+		<dict>
+			<key>description</key>
+			<string>The subscribe portion of the remote call example - receives the remote call</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Subscribe - Remote Call</string>
+			<key>class</key>
+			<string>SubscribeRemoteCallTest</string>
 		</dict>
 		<key>subscribe - Two Streams</key>
 		<dict>
@@ -214,12 +232,16 @@
 			<key>class</key>
 			<string>SubscribeTwoStreams</string>
 		</dict>
-		<key>home</key>
+		<key>TwoWay</key>
 		<dict>
-			<key>class</key>
-			<string>Home</string>
+			<key>description</key>
+			<string>Publish and subscribe simultaneously to hold a conversation</string>
+			<key>LocalProperties</key>
+			<dict/>
 			<key>name</key>
-			<string>Home</string>
+			<string>Two Way</string>
+			<key>class</key>
+			<string>TwoWayTest</string>
 		</dict>
 	</dict>
 </dict>
