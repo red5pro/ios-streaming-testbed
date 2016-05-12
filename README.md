@@ -39,6 +39,9 @@ Once you have modified your settings, you can run the application for simulator 
 | **[Record](R5ProTestbed/Tests/Recorded)**
 | *A publish example that records stream data on the server.*
 |
+| **[Remote Call](R5ProTestbed/Tests/RemoteCall)**
+| *The publish portion of the remote call example - sends the remote call.*
+|
 | **[Two Way](R5ProTestbed/Tests/TwoWay)**
 | *An example of simultaneously publishing while subscribing - allowing a conversation. Includes stream detection and auto-connection.*
 
@@ -56,6 +59,9 @@ Once you have modified your settings, you can run the application for simulator 
 |
 | **[Image Capture](R5ProTestbed/Tests/SubscribeStreamImage)**
 | *Touch the subscribe stream to take a screen shot that is displayed!*
+|
+| **[Remote Call](R5ProTestbed/Tests/RemoteCall)**
+| *The subscribe portion of the remote call example - receives the remote call.* 
 |
 | **[Two Streams](R5ProTestbed/Tests/SubscribeTwoStreams)**
 | *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.* 
