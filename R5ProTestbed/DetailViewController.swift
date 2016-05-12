@@ -12,10 +12,11 @@ import R5Streaming
 class DetailViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var hostText: UITextField!
-    
     @IBOutlet weak var stream1Text: UITextField!
-    
     @IBOutlet weak var stream2Text: UITextField!
+    @IBOutlet weak var debugSwitch: UISwitch!
+    @IBOutlet weak var videoSwitch: UISwitch!
+    @IBOutlet weak var audioSwitch: UISwitch!
     
     var r5ViewController : BaseTest? = nil
    
@@ -29,20 +30,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBAction func onStream1NameChange(sender: AnyObject) {
         Testbed.setStream1Name(stream1Text.text!)
     }
-    
     @IBAction func onStream2NameChange(sender: AnyObject) {
         Testbed.setStream2Name(stream2Text.text!)
     }
-    
     @IBAction func onStreamNameSwap(sender: AnyObject) {
         Testbed.setStream1Name(stream2Text.text!)
         Testbed.setStream2Name(stream1Text.text!)
         stream1Text.text = Testbed.parameters!["stream1"] as? String
         stream2Text.text = Testbed.parameters!["stream2"] as? String
     }
-
     @IBAction func onHostChange(sender: AnyObject) {
         Testbed.setHost(hostText.text!)
+    }
+    @IBAction func onDebugChange( sender: AnyObject) {
+        Testbed.setDebug(debugSwitch.on)
+    }
+    @IBAction func onVideoChange( sender: AnyObject) {
+        Testbed.setVideo(videoSwitch.on)
+    }
+    @IBAction func onAudioChange( sender: AnyObject) {
+        Testbed.setAudio(audioSwitch.on)
     }
     
     func configureView() {

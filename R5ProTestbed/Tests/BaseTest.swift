@@ -75,28 +75,26 @@ class BaseTest: UIViewController , R5StreamDelegate {
         self.publishStream = R5Stream(connection: connection)
         self.publishStream!.delegate = self
         
-        
-        // Attach the video from camera to stream
-        /////////////
-        // Can we get autorotate and auto choosing bitrate and resolution from network capabilities?
-        /////
-        let videoDevice = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo).last as? AVCaptureDevice
-        
-        let camera = R5Camera(device: videoDevice, andBitRate: Int32(Testbed.getParameter("bitrate") as! Int))
-        camera.width = 900
-        camera.height = 600
-        camera.orientation = 90
-        self.publishStream!.attachVideo(camera)
-        
-        // Attach the audio from microphone to stream
-        let audioDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
-        let microphone = R5Microphone(device: audioDevice)
-        microphone.bitrate = 32
-        microphone.device = audioDevice;
-        NSLog("Got device %@", audioDevice)
-        self.publishStream!.attachAudio(microphone)
+        if(Testbed.getParameter("video_on") as! Bool){
+            // Attach the video from camera to stream
+            let videoDevice = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo).last as? AVCaptureDevice
+            
+            let camera = R5Camera(device: videoDevice, andBitRate: Int32(Testbed.getParameter("bitrate") as! Int))
+            camera.width = 900
+            camera.height = 600
+            camera.orientation = 90
+            self.publishStream!.attachVideo(camera)
+        }
+        if(Testbed.getParameter("audio_on") as! Bool){
+            // Attach the audio from microphone to stream
+            let audioDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
+            let microphone = R5Microphone(device: audioDevice)
+            microphone.bitrate = 32
+            microphone.device = audioDevice;
+            NSLog("Got device %@", audioDevice)
+            self.publishStream!.attachAudio(microphone)
+        }
 
-        
     }
     
     override func viewDidLoad() {
@@ -126,7 +124,7 @@ class BaseTest: UIViewController , R5StreamDelegate {
         
         r5View.showPreview(true)
 
-        r5View.showDebugInfo(true)
+        r5View.showDebugInfo(Testbed.getParameter("debug_view") as! Bool)
 
         currentView = r5View;
         

@@ -43,7 +43,9 @@ enum R5StreamMode{
     
 }
 
-
+/**
+ *  Audio Controller for Stream playback. Defaults to shared instance.
+ */
 @property R5AudioController *audioController;
 
 
@@ -157,8 +159,18 @@ enum R5StreamMode{
 -(R5Microphone*) getMicrophone;
 
 
-
+/**
+ *  Get an image of the current stream
+ *
+ *  @return a UIImage containing the stream input/output
+ */
 -(UIImage *) getStreamImage;
+
+/**
+ *  Send updated stream meta information
+ */
+-(void)updateStreamMeta;
+
 
 @end
 

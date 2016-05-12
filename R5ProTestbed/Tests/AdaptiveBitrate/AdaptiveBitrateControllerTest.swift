@@ -29,9 +29,9 @@ class AdaptiveBitrateControllerTest: BaseTest {
         self.currentView!.attachStream(publishStream!)
         
         //The Adaptive bitrate controller!
-       let controller = R5AdaptiveBitrateController()
+        let controller = R5AdaptiveBitrateController()
         controller.attachToStream(self.publishStream!)
-        controller.requiresVideo = true
+        controller.requiresVideo = Testbed.getParameter("video_on") as! Bool
         
         
         self.publishStream!.publish(Testbed.getParameter("stream1") as! String, type: R5RecordTypeLive)
