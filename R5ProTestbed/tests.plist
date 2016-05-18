@@ -31,6 +31,13 @@
 	</dict>
 	<key>Tests</key>
 	<dict>
+		<key>subscribe - SetFrame</key>
+		<dict>
+			<key>name</key>
+			<string>Subscribe - Set Frame Size</string>
+			<key>class</key>
+			<string>SubscribeSetSizeTest</string>
+		</dict>
 		<key>home</key>
 		<dict>
 			<key>class</key>
