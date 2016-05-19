@@ -5,7 +5,7 @@
 	<key>GlobalProperties</key>
 	<dict>
 		<key>bitrate</key>
-		<integer>256</integer>
+		<integer>400</integer>
 		<key>host</key>
 		<string>0.0.0.0</string>
 		<key>buffer_time</key>
@@ -19,7 +19,7 @@
 		<key>context</key>
 		<string>live</string>
 		<key>camera_width</key>
-		<integer>320</integer>
+		<integer>426</integer>
 		<key>camera_height</key>
 		<string>240</string>
 		<key>debug_view</key>
@@ -48,35 +48,40 @@
 		<key>publish</key>
 		<dict>
 			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>256</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Publish</string>
 			<key>class</key>
 			<string>PublishTest</string>
 		</dict>
-		<key>publish - 1200</key>
+		<key>publish - 1080p</key>
 		<dict>
 			<key>description</key>
-			<string>A high bitrate publisher</string>
+			<string>A high quality publisher</string>
 			<key>LocalProperties</key>
 			<dict>
+				<key>camera_width</key>
+				<integer>1920</integer>
+				<key>camera_height</key>
+				<string>1080</string>
 				<key>bitrate</key>
-				<integer>1200</integer>
+				<integer>4500</integer>
 			</dict>
 			<key>name</key>
-			<string>Publish - 1200</string>
+			<string>Publish - 1080p</string>
 			<key>class</key>
 			<string>PublishTest</string>
 		</dict>
 		<key>publish - ABR</key>
 		<dict>
 			<key>description</key>
-			<string>A high bitrate publisher with AdaptiveBitrateController</string>
+			<string>A high quality publisher with AdaptiveBitrateController</string>
 			<key>LocalProperties</key>
 			<dict>
+				<key>camera_width</key>
+				<integer>1920</integer>
+				<key>camera_height</key>
+				<string>1080</string>
 				<key>bitrate</key>
 				<integer>4800</integer>
 			</dict>
@@ -90,10 +95,7 @@
 			<key>description</key>
 			<string>Touch the screen to swap which camera is being used! Verify using flash that camera is swapping properly and no rendering problems occur.</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>256</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Publish - Camera Swap</string>
 			<key>class</key>
@@ -104,10 +106,7 @@
 			<key>description</key>
 			<string>Touch the publish stream to take a screen shot that is displayed!</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>256</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Publish - ImageCapture</string>
 			<key>class</key>
@@ -118,10 +117,7 @@
 			<key>description</key>
 			<string>Touch the screen to rotate the output video 90 degrees.  Verify with flash, android, or other iOS device running subscribe test.</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>256</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Publish - Orientation Change</string>
 			<key>class</key>
@@ -132,12 +128,9 @@
 			<key>description</key>
 			<string>A publish example that records stream data on the server.</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>256</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
-			<string>publish - Record</string>
+			<string>Publish - Record</string>
 			<key>class</key>
 			<string>RecordedTest</string>
 		</dict>
@@ -155,10 +148,7 @@
 		<key>subscribe</key>
 		<dict>
 			<key>LocalProperties</key>
-			<dict>
-				<key>buffer_time</key>
-				<integer>1</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Subscribe</string>
 			<key>class</key>
@@ -169,10 +159,7 @@
 			<key>description</key>
 			<string>Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>buffer_time</key>
-				<integer>1</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Subscribe - Aspect Ratio</string>
 			<key>class</key>
@@ -183,10 +170,7 @@
 			<key>description</key>
 			<string>Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>buffer_time</key>
-				<integer>1</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Subscribe - Bandwidth Test</string>
 			<key>class</key>
@@ -208,10 +192,7 @@
 			<key>description</key>
 			<string>Touch the subscribe stream to take a screen shot that is displayed!</string>
 			<key>LocalProperties</key>
-			<dict>
-				<key>bitrate</key>
-				<integer>1200</integer>
-			</dict>
+			<dict/>
 			<key>name</key>
 			<string>Subscribe - ImageCapture</string>
 			<key>class</key>
