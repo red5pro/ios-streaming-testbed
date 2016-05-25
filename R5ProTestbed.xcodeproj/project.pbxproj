@@ -14,6 +14,7 @@
 		4874D59F1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874D59E1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift */; };
 		4874D5A31C221CD000A98102 /* ALToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4874D5A21C221CD000A98102 /* ALToastView.m */; };
 		4874ECD01C483FDA002BDA6D /* SubscribeStreamImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874ECCF1C483FDA002BDA6D /* SubscribeStreamImageTest.swift */; };
+		48BB1D811CED140D00D915E5 /* SubscribeSetSizeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB1D801CED140D00D915E5 /* SubscribeSetSizeTest.swift */; };
 		48BF80AE1C245AA7000E996E /* PublishOrientationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF80AD1C245AA7000E996E /* PublishOrientationTest.swift */; };
 		48BF80B11C245D29000E996E /* Info-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 48BF80B01C245D29000E996E /* Info-100.png */; };
 		48BF80B31C246F6D000E996E /* SubscribeAspectRatioTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF80B21C246F6D000E996E /* SubscribeAspectRatioTest.swift */; };
@@ -51,6 +52,7 @@
 		4874D5A11C221CD000A98102 /* ALToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALToastView.h; sourceTree = "<group>"; };
 		4874D5A21C221CD000A98102 /* ALToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALToastView.m; sourceTree = "<group>"; };
 		4874ECCF1C483FDA002BDA6D /* SubscribeStreamImageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeStreamImageTest.swift; path = Tests/SubscribeStreamImage/SubscribeStreamImageTest.swift; sourceTree = "<group>"; };
+		48BB1D801CED140D00D915E5 /* SubscribeSetSizeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeSetSizeTest.swift; sourceTree = "<group>"; };
 		48BF80AD1C245AA7000E996E /* PublishOrientationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishOrientationTest.swift; path = Tests/PublishOrientation/PublishOrientationTest.swift; sourceTree = "<group>"; };
 		48BF80B01C245D29000E996E /* Info-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-100.png"; sourceTree = "<group>"; };
 		48BF80B21C246F6D000E996E /* SubscribeAspectRatioTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeAspectRatioTest.swift; path = Tests/SubscribeAspectRatio/SubscribeAspectRatioTest.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		48DFEDC91C21BE0B0040B624 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				48BB1D801CED140D00D915E5 /* SubscribeSetSizeTest.swift */,
 				48DFEDD61C21C2540040B624 /* BaseTest.swift */,
 				48DFEDCC1C21BF0A0040B624 /* PublishTest.swift */,
 				4874D59E1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift */,
@@ -264,6 +267,7 @@
 				48DFEDCD1C21BF0A0040B624 /* PublishTest.swift in Sources */,
 				923363E41CE4CFF1000442BF /* PublishRemoteCallTest.swift in Sources */,
 				4874D59D1C2216DB00A98102 /* SubscribeTest.swift in Sources */,
+				48BB1D811CED140D00D915E5 /* SubscribeSetSizeTest.swift in Sources */,
 				485345071C23528400D409F3 /* PublishStreamImageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

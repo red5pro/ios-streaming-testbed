@@ -20,9 +20,9 @@ Once you have modified your settings, you can run the application for simulator 
 
 ###[Publishing](R5ProTestbed/Tests/Publish)
 
-| **[1200](R5ProTestbed/Tests/Publish)**                 
+| **[1080p](R5ProTestbed/Tests/Publish)**                 
 | :-----
-| *A high bitrate publisher. Note that this is the publish test with a non-default 'bitrate' value set in tests.plist* 
+| *A high quality publisher. Note that this is the publish test with a non-default 'bitrate' and camera size values set in tests.plist* 
 |
 | **[ABR](R5ProTestbed/Tests/AdaptiveBitrate)**
 | *A high bitrate publisher with AdaptiveBitrateController*   
