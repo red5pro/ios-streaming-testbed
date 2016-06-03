@@ -30,6 +30,9 @@ Once you have modified your settings, you can run the application for simulator 
 | **[Camera Swap](R5ProTestbed/Tests/CameraSwap)**
 | *Touch the screen to swap which camera is being used! erify with flash, android, or other iOS device running subscribe test that camera is swapping properly and no rendering problems occur.* 
 |
+| **[Custom Video Source](R5ProTestbed/Tests/PublishCustomSource)**
+| *Uses a custom controller to supply video data to the publisher.*
+|
 | **[Image Capture](R5ProTestbed/Tests/PublishStreamImage)**
 | *Touch the publish stream to take a screen shot that is displayed!* 
 |
@@ -41,6 +44,9 @@ Once you have modified your settings, you can run the application for simulator 
 |
 | **[Remote Call](R5ProTestbed/Tests/RemoteCall)**
 | *The publish portion of the remote call example - sends the remote call.*
+| 
+| **[Stream Manager](R5ProTestbed/Tests/PublishStreamManager)**
+| *A publish example that connects with a server cluster using a Stream Manger*
 |
 | **[Two Way](R5ProTestbed/Tests/TwoWay)**
 | *An example of simultaneously publishing while subscribing - allowing a conversation. Includes stream detection and auto-connection.*
@@ -55,16 +61,23 @@ Once you have modified your settings, you can run the application for simulator 
 | *Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.*  
 |
 | **[Cluster](R5ProTestbed/Tests/SubscribeCluster)** 
-| *An example of conecting to a cluster server.* 
+| *An example of conecting to a cluster server.*
 |
 | **[Image Capture](R5ProTestbed/Tests/SubscribeStreamImage)**
 | *Touch the subscribe stream to take a screen shot that is displayed!*
 |
+| **[No View](R5ProTestbed/Tests/SubscribeNoView)**
+| *A proof of using an audio only stream without attaching it to a view.*
+|
 | **[Remote Call](R5ProTestbed/Tests/RemoteCall)**
 | *The subscribe portion of the remote call example - receives the remote call.* 
+| 
+| **[Stream Manager](R5ProTestbed/Tests/SubscribeStreamManager)**
+| *A subscribe example that connects with a server cluster using a Stream Manger* 
 |
 | **[Two Streams](R5ProTestbed/Tests/SubscribeTwoStreams)**
-| *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.* 
+| *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.*
+
 
      
 ##Notes

@@ -40,6 +40,12 @@
 		92554F5E1C77B547003AF9DA /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92554F5D1C77B547003AF9DA /* R5Streaming.framework */; };
 		92724E841C9320FB00998C1C /* TwoWayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92724E831C9320FB00998C1C /* TwoWayTest.swift */; };
 		92B15BCA1CA055E5006BEA1D /* SubscribeCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */; };
+		928B1CBD1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B1CBC1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift */; };
+		92CC78091CB6F8DD00CD4352 /* SubscribeTwoStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC78081CB6F8DD00CD4352 /* SubscribeTwoStreams.swift */; };
+		92D8F0B21CCFF41100EC5C2C /* PublishRemoteCallTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8F0B11CCFF41100EC5C2C /* PublishRemoteCallTest.swift */; };
+		92E13BF41CDD165800DA5783 /* SubscribeNoViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */; };
+		92EA19DA1CE13717006B3A97 /* PublishCustomSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA19D91CE13717006B3A97 /* PublishCustomSourceTest.swift */; };
+		92EA19DD1CE137DD006B3A97 /* CustomVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA19DC1CE137DD006B3A97 /* CustomVideoSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,11 +65,12 @@
 		48DFEDA81C21BBC60040B624 /* R5ProTestbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = R5ProTestbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DFEDAB1C21BBC60040B624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48DFEDAD1C21BBC60040B624 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		48DFEDAF1C21BBC60040B624 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = R5ProTestbed/DetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		48DFEDAF1C21BBC60040B624 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		48DFEDB21C21BBC60040B624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48DFEDB41C21BBC60040B624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48DFEDB71C21BBC60040B624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48DFEDB91C21BBC60040B624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48DFEDC51C21BBDB0040B624 /* R5Streaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R5Streaming.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/red5streaming-cdlwolfecqijbreyzyobagnptrsp/Build/Products/Debug-iphoneos/R5Streaming.framework"; sourceTree = "<group>"; };
 		48DFEDCC1C21BF0A0040B624 /* PublishTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishTest.swift; path = Tests/Publish/PublishTest.swift; sourceTree = "<group>"; };
 		48DFEDCE1C21BF2D0040B624 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		48DFEDD01C21BF320040B624 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -74,12 +81,17 @@
 		48DFEDDA1C21C5AB0040B624 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		48DFEDDC1C21E91E0040B624 /* tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tests.plist; sourceTree = "<group>"; };
 		48DFEDDE1C21EA780040B624 /* Testbed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Testbed.swift; sourceTree = "<group>"; };
-		923363E21CE4CFF1000442BF /* PublishRemoteCallTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishRemoteCallTest.swift; path = Tests/RemoteCall/PublishRemoteCallTest.swift; sourceTree = "<group>"; };
-		923363E31CE4CFF1000442BF /* SubscribeRemoteCallTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeRemoteCallTest.swift; path = Tests/RemoteCall/SubscribeRemoteCallTest.swift; sourceTree = "<group>"; };
-		924368031C9888F60059BC43 /* RecordedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedTest.swift; path = Tests/Recorded/RecordedTest.swift; sourceTree = "<group>"; };
-		92554F5D1C77B547003AF9DA /* R5Streaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R5Streaming.framework; path = R5ProTestbed/R5Streaming.framework; sourceTree = "<group>"; };
-		92724E831C9320FB00998C1C /* TwoWayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoWayTest.swift; path = Tests/TwoWay/TwoWayTest.swift; sourceTree = "<group>"; };
-		92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeCluster.swift; path = Tests/SubscribeCluster/SubscribeCluster.swift; sourceTree = "<group>"; };
+		924791751CD114D400A73FA8 /* SubscribeRemoteCallTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeRemoteCallTest.swift; path = Tests/RemoteCall/SubscribeRemoteCallTest.swift; sourceTree = "<group>"; };
+		924E92ED1CB84E79000B2797 /* PublishStreamManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishStreamManagerTest.swift; path = Tests/PublishStreamManager/PublishStreamManagerTest.swift; sourceTree = "<group>"; };
+		928B1CBC1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeStreamManagerTest.swift; path = Tests/SubscribeStreamManager/SubscribeStreamManagerTest.swift; sourceTree = "<group>"; };
+		92CC78081CB6F8DD00CD4352 /* SubscribeTwoStreams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeTwoStreams.swift; path = Tests/SubscribeTwoStreams/SubscribeTwoStreams.swift; sourceTree = "<group>"; };
+		92CC780A1CB6F8FF00CD4352 /* RecordedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedTest.swift; path = Tests/Recorded/RecordedTest.swift; sourceTree = "<group>"; };
+		92CC780C1CB6F91D00CD4352 /* SubscribeCluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeCluster.swift; path = Tests/SubscribeCluster/SubscribeCluster.swift; sourceTree = "<group>"; };
+		92CC780E1CB6F93C00CD4352 /* TwoWayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoWayTest.swift; path = Tests/TwoWay/TwoWayTest.swift; sourceTree = "<group>"; };
+		92D8F0B11CCFF41100EC5C2C /* PublishRemoteCallTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishRemoteCallTest.swift; path = Tests/RemoteCall/PublishRemoteCallTest.swift; sourceTree = "<group>"; };
+		92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeNoViewTest.swift; path = Tests/SubscribeNoView/SubscribeNoViewTest.swift; sourceTree = "<group>"; };
+		92EA19D91CE13717006B3A97 /* PublishCustomSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishCustomSourceTest.swift; path = Tests/PublishCustomSource/PublishCustomSourceTest.swift; sourceTree = "<group>"; };
+		92EA19DC1CE137DD006B3A97 /* CustomVideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomVideoSource.swift; path = Tests/PublishCustomSource/CustomVideoSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +103,8 @@
 				48DFEDD91C21C5940040B624 /* OpenAL.framework in Frameworks */,
 				48DFEDD31C21BF370040B624 /* libiconv.2.4.0.tbd in Frameworks */,
 				48DFEDD11C21BF320040B624 /* QuartzCore.framework in Frameworks */,
-				92554F5E1C77B547003AF9DA /* R5Streaming.framework in Frameworks */,
 				48DFEDCF1C21BF2D0040B624 /* CoreFoundation.framework in Frameworks */,
+				48DFEDC61C21BBDB0040B624 /* R5Streaming.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,10 +127,10 @@
 				48DFEDD21C21BF370040B624 /* libiconv.2.4.0.tbd */,
 				48DFEDD01C21BF320040B624 /* QuartzCore.framework */,
 				48DFEDCE1C21BF2D0040B624 /* CoreFoundation.framework */,
+				48DFEDC51C21BBDB0040B624 /* R5Streaming.framework */,
 				48DFEDAA1C21BBC60040B624 /* R5ProTestbed */,
 				48BF80AF1C245D0B000E996E /* Resources */,
 				48DFEDA91C21BBC60040B624 /* Products */,
-				92554F5D1C77B547003AF9DA /* R5Streaming.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +145,7 @@
 		48DFEDAA1C21BBC60040B624 /* R5ProTestbed */ = {
 			isa = PBXGroup;
 			children = (
+				92EA19DB1CE1375A006B3A97 /* Utilities */,
 				4874D5A11C221CD000A98102 /* ALToastView.h */,
 				4874D5A21C221CD000A98102 /* ALToastView.m */,
 				48DFEDD41C21C18F0040B624 /* Home.swift */,
@@ -159,19 +172,32 @@
 				48DFEDCC1C21BF0A0040B624 /* PublishTest.swift */,
 				4874D59E1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift */,
 				485345081C23552F00D409F3 /* CameraSwapTest.swift */,
+				92EA19D91CE13717006B3A97 /* PublishCustomSourceTest.swift */,
 				485345061C23528400D409F3 /* PublishStreamImageTest.swift */,
 				48BF80AD1C245AA7000E996E /* PublishOrientationTest.swift */,
-				924368031C9888F60059BC43 /* RecordedTest.swift */,
-				923363E21CE4CFF1000442BF /* PublishRemoteCallTest.swift */,
+				92CC780A1CB6F8FF00CD4352 /* RecordedTest.swift */,
+				92D8F0B11CCFF41100EC5C2C /* PublishRemoteCallTest.swift */,
+				924E92ED1CB84E79000B2797 /* PublishStreamManagerTest.swift */,
 				4874D59C1C2216DB00A98102 /* SubscribeTest.swift */,
 				48BF80B21C246F6D000E996E /* SubscribeAspectRatioTest.swift */,
 				4853450A1C2357D200D409F3 /* SubscriberBandwidthTest.swift */,
-				92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */,
+				92CC780C1CB6F91D00CD4352 /* SubscribeCluster.swift */,
+				92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */,
+				924791751CD114D400A73FA8 /* SubscribeRemoteCallTest.swift */,
 				4874ECCF1C483FDA002BDA6D /* SubscribeStreamImageTest.swift */,
-				923363E31CE4CFF1000442BF /* SubscribeRemoteCallTest.swift */,
-				92724E831C9320FB00998C1C /* TwoWayTest.swift */,
+				928B1CBC1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift */,
+				92CC78081CB6F8DD00CD4352 /* SubscribeTwoStreams.swift */,
+				92CC780E1CB6F93C00CD4352 /* TwoWayTest.swift */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		92EA19DB1CE1375A006B3A97 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				92EA19DC1CE137DD006B3A97 /* CustomVideoSource.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,27 +274,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				48DFEDB01C21BBC60040B624 /* DetailViewController.swift in Sources */,
-				924368041C9888F60059BC43 /* RecordedTest.swift in Sources */,
-				923363E51CE4CFF1000442BF /* SubscribeRemoteCallTest.swift in Sources */,
+				92CC780D1CB6F91D00CD4352 /* SubscribeCluster.swift in Sources */,
+				924791761CD114D400A73FA8 /* SubscribeRemoteCallTest.swift in Sources */,
 				48BF80B31C246F6D000E996E /* SubscribeAspectRatioTest.swift in Sources */,
 				4874D5A31C221CD000A98102 /* ALToastView.m in Sources */,
-				92B15BCA1CA055E5006BEA1D /* SubscribeCluster.swift in Sources */,
 				48DFEDAE1C21BBC60040B624 /* MasterViewController.swift in Sources */,
+				92CC78091CB6F8DD00CD4352 /* SubscribeTwoStreams.swift in Sources */,
+				92E13BF41CDD165800DA5783 /* SubscribeNoViewTest.swift in Sources */,
 				48DFEDD51C21C18F0040B624 /* Home.swift in Sources */,
 				4853450B1C2357D200D409F3 /* SubscriberBandwidthTest.swift in Sources */,
 				4874D59F1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift in Sources */,
 				48DFEDAC1C21BBC60040B624 /* AppDelegate.swift in Sources */,
 				48DFEDDF1C21EA780040B624 /* Testbed.swift in Sources */,
 				48BF80AE1C245AA7000E996E /* PublishOrientationTest.swift in Sources */,
-				92724E841C9320FB00998C1C /* TwoWayTest.swift in Sources */,
+				92EA19DD1CE137DD006B3A97 /* CustomVideoSource.swift in Sources */,
 				4874ECD01C483FDA002BDA6D /* SubscribeStreamImageTest.swift in Sources */,
+				92D8F0B21CCFF41100EC5C2C /* PublishRemoteCallTest.swift in Sources */,
 				485345091C23552F00D409F3 /* CameraSwapTest.swift in Sources */,
+				92EA19DA1CE13717006B3A97 /* PublishCustomSourceTest.swift in Sources */,
+				924E92EE1CB84E79000B2797 /* PublishStreamManagerTest.swift in Sources */,
+				92CC780F1CB6F93C00CD4352 /* TwoWayTest.swift in Sources */,
 				48DFEDD71C21C2540040B624 /* BaseTest.swift in Sources */,
 				48DFEDCD1C21BF0A0040B624 /* PublishTest.swift in Sources */,
-				923363E41CE4CFF1000442BF /* PublishRemoteCallTest.swift in Sources */,
+				928B1CBD1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift in Sources */,
 				4874D59D1C2216DB00A98102 /* SubscribeTest.swift in Sources */,
 				48BB1D811CED140D00D915E5 /* SubscribeSetSizeTest.swift in Sources */,
 				485345071C23528400D409F3 /* PublishStreamImageTest.swift in Sources */,
+				92CC780B1CB6F8FF00CD4352 /* RecordedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

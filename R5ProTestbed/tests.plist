@@ -101,6 +101,17 @@
 			<key>class</key>
 			<string>CameraSwapTest</string>
 		</dict>
+		<key>publish - Custom Video Source</key>
+		<dict>
+			<key>description</key>
+			<string>Touch the screen to swap which camera is being used! Verify using flash that camera is swapping properly and no rendering problems occur.</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Publish - Custom Video Source</string>
+			<key>class</key>
+			<string>PublishCustomSourceTest</string>
+		</dict>
 		<key>publish - Image Capture</key>
 		<dict>
 			<key>description</key>
@@ -144,6 +155,17 @@
 			<string>Publish - Remote Call</string>
 			<key>class</key>
 			<string>PublishRemoteCallTest</string>
+		</dict>
+		<key>publish - Stream Manager</key>
+		<dict>
+			<key>description</key>
+			<string>A publish example that connects to a cluster server with the Stream Manager.</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Publish - Stream Manager</string>
+			<key>class</key>
+			<string>PublishStreamManagerTest</string>
 		</dict>
 		<key>subscribe</key>
 		<dict>
@@ -198,6 +220,17 @@
 			<key>class</key>
 			<string>SubscribeStreamImageTest</string>
 		</dict>
+		<key>subscribe - No View</key>
+		<dict>
+			<key>description</key>
+			<string>A proof of using an audio only stream without attaching it to a view.</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Subscribe - No View</string>
+			<key>class</key>
+			<string>SubscribeNoViewTest</string>
+		</dict>
 		<key>subscribe - Remote Call</key>
 		<dict>
 			<key>description</key>
@@ -208,6 +241,17 @@
 			<string>Subscribe - Remote Call</string>
 			<key>class</key>
 			<string>SubscribeRemoteCallTest</string>
+		</dict>
+		<key>subscribe - Stream Manager</key>
+		<dict>
+			<key>description</key>
+			<string>A subscribe example that connects to a cluster server with the Stream Manager.</string>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Subscribe - Stream Manager</string>
+			<key>class</key>
+			<string>SubscribeStreamManagerTest</string>
 		</dict>
 		<key>subscribe - Two Streams</key>
 		<dict>
