@@ -34,18 +34,13 @@
 		48DFEDDB1C21C5AB0040B624 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DFEDDA1C21C5AB0040B624 /* libstdc++.6.0.9.tbd */; };
 		48DFEDDD1C21E91E0040B624 /* tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48DFEDDC1C21E91E0040B624 /* tests.plist */; };
 		48DFEDDF1C21EA780040B624 /* Testbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFEDDE1C21EA780040B624 /* Testbed.swift */; };
-		923363E41CE4CFF1000442BF /* PublishRemoteCallTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923363E21CE4CFF1000442BF /* PublishRemoteCallTest.swift */; };
-		923363E51CE4CFF1000442BF /* SubscribeRemoteCallTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923363E31CE4CFF1000442BF /* SubscribeRemoteCallTest.swift */; };
-		924368041C9888F60059BC43 /* RecordedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924368031C9888F60059BC43 /* RecordedTest.swift */; };
-		92554F5E1C77B547003AF9DA /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92554F5D1C77B547003AF9DA /* R5Streaming.framework */; };
-		92724E841C9320FB00998C1C /* TwoWayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92724E831C9320FB00998C1C /* TwoWayTest.swift */; };
-		92B15BCA1CA055E5006BEA1D /* SubscribeCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B15BC91CA055E5006BEA1D /* SubscribeCluster.swift */; };
 		928B1CBD1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B1CBC1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift */; };
 		92CC78091CB6F8DD00CD4352 /* SubscribeTwoStreams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC78081CB6F8DD00CD4352 /* SubscribeTwoStreams.swift */; };
 		92D8F0B21CCFF41100EC5C2C /* PublishRemoteCallTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8F0B11CCFF41100EC5C2C /* PublishRemoteCallTest.swift */; };
 		92E13BF41CDD165800DA5783 /* SubscribeNoViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */; };
 		92EA19DA1CE13717006B3A97 /* PublishCustomSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA19D91CE13717006B3A97 /* PublishCustomSourceTest.swift */; };
 		92EA19DD1CE137DD006B3A97 /* CustomVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA19DC1CE137DD006B3A97 /* CustomVideoSource.swift */; };
+		92F9A0681D020BA100F49644 /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DFEDC51C21BBDB0040B624 /* R5Streaming.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +65,7 @@
 		48DFEDB41C21BBC60040B624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48DFEDB71C21BBC60040B624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48DFEDB91C21BBC60040B624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48DFEDC51C21BBDB0040B624 /* R5Streaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R5Streaming.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/red5streaming-cdlwolfecqijbreyzyobagnptrsp/Build/Products/Debug-iphoneos/R5Streaming.framework"; sourceTree = "<group>"; };
+		48DFEDC51C21BBDB0040B624 /* R5Streaming.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R5Streaming.framework; path = R5ProTestbed/R5Streaming.framework; sourceTree = "<group>"; };
 		48DFEDCC1C21BF0A0040B624 /* PublishTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishTest.swift; path = Tests/Publish/PublishTest.swift; sourceTree = "<group>"; };
 		48DFEDCE1C21BF2D0040B624 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		48DFEDD01C21BF320040B624 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -104,7 +99,7 @@
 				48DFEDD31C21BF370040B624 /* libiconv.2.4.0.tbd in Frameworks */,
 				48DFEDD11C21BF320040B624 /* QuartzCore.framework in Frameworks */,
 				48DFEDCF1C21BF2D0040B624 /* CoreFoundation.framework in Frameworks */,
-				48DFEDC61C21BBDB0040B624 /* R5Streaming.framework in Frameworks */,
+				92F9A0681D020BA100F49644 /* R5Streaming.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48DFEDB01C21BBC60040B624 /* DetailViewController.swift in Sources */,
-				92CC780D1CB6F91D00CD4352 /* SubscribeCluster.swift in Sources */,
-				924791761CD114D400A73FA8 /* SubscribeRemoteCallTest.swift in Sources */,
 				48BF80B31C246F6D000E996E /* SubscribeAspectRatioTest.swift in Sources */,
 				4874D5A31C221CD000A98102 /* ALToastView.m in Sources */,
 				48DFEDAE1C21BBC60040B624 /* MasterViewController.swift in Sources */,
@@ -292,15 +285,12 @@
 				92D8F0B21CCFF41100EC5C2C /* PublishRemoteCallTest.swift in Sources */,
 				485345091C23552F00D409F3 /* CameraSwapTest.swift in Sources */,
 				92EA19DA1CE13717006B3A97 /* PublishCustomSourceTest.swift in Sources */,
-				924E92EE1CB84E79000B2797 /* PublishStreamManagerTest.swift in Sources */,
-				92CC780F1CB6F93C00CD4352 /* TwoWayTest.swift in Sources */,
 				48DFEDD71C21C2540040B624 /* BaseTest.swift in Sources */,
 				48DFEDCD1C21BF0A0040B624 /* PublishTest.swift in Sources */,
 				928B1CBD1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift in Sources */,
 				4874D59D1C2216DB00A98102 /* SubscribeTest.swift in Sources */,
 				48BB1D811CED140D00D915E5 /* SubscribeSetSizeTest.swift in Sources */,
 				485345071C23528400D409F3 /* PublishStreamImageTest.swift in Sources */,
-				92CC780B1CB6F8FF00CD4352 /* RecordedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
