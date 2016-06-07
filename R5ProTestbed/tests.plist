@@ -31,13 +31,6 @@
 	</dict>
 	<key>Tests</key>
 	<dict>
-		<key>subscribe - SetFrame</key>
-		<dict>
-			<key>name</key>
-			<string>Subscribe - Set Frame Size</string>
-			<key>class</key>
-			<string>SubscribeSetSizeTest</string>
-		</dict>
 		<key>home</key>
 		<dict>
 			<key>class</key>
@@ -231,6 +224,15 @@
 			<key>class</key>
 			<string>SubscribeNoViewTest</string>
 		</dict>
+		<key>subscribe - Reconnect</key>
+		<dict>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Subscribe - Reconnect</string>
+			<key>class</key>
+			<string>SubscribeAutoReconnectTest</string>
+		</dict>
 		<key>subscribe - Remote Call</key>
 		<dict>
 			<key>description</key>
@@ -241,6 +243,15 @@
 			<string>Subscribe - Remote Call</string>
 			<key>class</key>
 			<string>SubscribeRemoteCallTest</string>
+		</dict>
+		<key>subscribe - SetFrame</key>
+		<dict>
+			<key>LocalProperties</key>
+			<dict/>
+			<key>name</key>
+			<string>Subscribe - Set Frame Size</string>
+			<key>class</key>
+			<string>SubscribeSetSizeTest</string>
 		</dict>
 		<key>subscribe - Stream Manager</key>
 		<dict>
