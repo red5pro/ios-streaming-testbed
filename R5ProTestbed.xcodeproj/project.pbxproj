@@ -45,6 +45,7 @@
 		92E13BF41CDD165800DA5783 /* SubscribeNoViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */; };
 		92EA19DA1CE13717006B3A97 /* PublishCustomSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA19D91CE13717006B3A97 /* PublishCustomSourceTest.swift */; };
 		92EA19DD1CE137DD006B3A97 /* CustomVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA19DC1CE137DD006B3A97 /* CustomVideoSource.swift */; };
+		92EAA9DB1D0734EA00B2CE46 /* SubscribeAutoReconnectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAA9DA1D0734EA00B2CE46 /* SubscribeAutoReconnectTest.swift */; };
 		92F9A0681D020BA100F49644 /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DFEDC51C21BBDB0040B624 /* R5Streaming.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeNoViewTest.swift; path = Tests/SubscribeNoView/SubscribeNoViewTest.swift; sourceTree = "<group>"; };
 		92EA19D91CE13717006B3A97 /* PublishCustomSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishCustomSourceTest.swift; path = Tests/PublishCustomSource/PublishCustomSourceTest.swift; sourceTree = "<group>"; };
 		92EA19DC1CE137DD006B3A97 /* CustomVideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomVideoSource.swift; path = Tests/PublishCustomSource/CustomVideoSource.swift; sourceTree = "<group>"; };
+		92EAA9DA1D0734EA00B2CE46 /* SubscribeAutoReconnectTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeAutoReconnectTest.swift; path = Tests/SubscribeReconnect/SubscribeAutoReconnectTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				4853450A1C2357D200D409F3 /* SubscriberBandwidthTest.swift */,
 				926794FA1D061968004B0BCD /* SubscribeCluster.swift */,
 				92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */,
+				92EAA9DA1D0734EA00B2CE46 /* SubscribeAutoReconnectTest.swift */,
 				926794FC1D061983004B0BCD /* SubscribeRemoteCallTest.swift */,
 				4874ECCF1C483FDA002BDA6D /* SubscribeStreamImageTest.swift */,
 				928B1CBC1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift */,
@@ -296,6 +299,7 @@
 				48DFEDD71C21C2540040B624 /* BaseTest.swift in Sources */,
 				926794F91D061942004B0BCD /* RecordedTest.swift in Sources */,
 				48DFEDCD1C21BF0A0040B624 /* PublishTest.swift in Sources */,
+				92EAA9DB1D0734EA00B2CE46 /* SubscribeAutoReconnectTest.swift in Sources */,
 				928B1CBD1CBC0DC5002C66BA /* SubscribeStreamManagerTest.swift in Sources */,
 				4874D59D1C2216DB00A98102 /* SubscribeTest.swift in Sources */,
 				48BB1D811CED140D00D915E5 /* SubscribeSetSizeTest.swift in Sources */,
