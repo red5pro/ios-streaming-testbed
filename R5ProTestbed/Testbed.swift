@@ -58,15 +58,15 @@ class Testbed: NSObject {
     }
     
     static func setDebug(on : Bool){
-        Testbed.parameters?.setValue(true, forKey: "debug_view")
+        Testbed.parameters?.setValue(on, forKey: "debug_view")
     }
     
     static func setVideo(on : Bool){
-        Testbed.parameters?.setValue(true, forKey: "video_on")
+        Testbed.parameters?.setValue(on, forKey: "video_on")
     }
     
     static func setAudio(on : Bool){
-        Testbed.parameters?.setValue(true, forKey: "audio_on")
+        Testbed.parameters?.setValue(on, forKey: "audio_on")
     }
     
     static func setLocalOverrides(params : NSMutableDictionary?){
