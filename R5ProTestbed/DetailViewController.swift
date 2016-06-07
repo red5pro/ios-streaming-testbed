@@ -64,6 +64,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         stream1Text.delegate = self
         stream2Text.delegate = self
         
+        debugSwitch.setOn((Testbed.parameters!["debug_view"] as? Bool)!, animated: false)
+        videoSwitch.setOn((Testbed.parameters!["video_on"] as? Bool)!, animated: false)
+        audioSwitch.setOn((Testbed.parameters!["audio_on"] as? Bool)!, animated: false)
+        
         if(self.detailItem != nil){
             
             if(self.detailItem!["description"] != nil){

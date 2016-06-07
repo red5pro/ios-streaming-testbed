@@ -112,6 +112,11 @@ class BaseTest: UIViewController , R5StreamDelegate {
     
     override func viewDidAppear(animated: Bool) {
         
+        //this is just to have a white background to the example
+        let backView : UIView = UIView(frame: self.view.frame);
+        backView.backgroundColor = UIColor.whiteColor();
+        self.view.addSubview(backView);
+        
     }
     
     func setupDefaultR5VideoViewController() -> R5VideoViewController{
