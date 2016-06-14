@@ -80,8 +80,8 @@ class BaseTest: UIViewController , R5StreamDelegate {
             let videoDevice = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo).last as? AVCaptureDevice
             
             let camera = R5Camera(device: videoDevice, andBitRate: Int32(Testbed.getParameter("bitrate") as! Int))
-            camera.width = 900
-            camera.height = 600
+            camera.width = Int32(Testbed.getParameter("camera_width") as! Int)
+            camera.height = Int32(Testbed.getParameter("camera_height") as! Int)
             camera.orientation = 90
             self.publishStream!.attachVideo(camera)
         }
