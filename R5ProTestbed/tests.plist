@@ -21,7 +21,7 @@
 		<key>camera_width</key>
 		<integer>426</integer>
 		<key>camera_height</key>
-		<string>240</string>
+		<integer>240</integer>
 		<key>debug_view</key>
 		<true/>
 		<key>video_on</key>
