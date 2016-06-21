@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		485345071C23528400D409F3 /* PublishStreamImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485345061C23528400D409F3 /* PublishStreamImageTest.swift */; };
 		485345091C23552F00D409F3 /* CameraSwapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485345081C23552F00D409F3 /* CameraSwapTest.swift */; };
-		4853450B1C2357D200D409F3 /* SubscriberBandwidthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4853450A1C2357D200D409F3 /* SubscriberBandwidthTest.swift */; };
 		4874D59D1C2216DB00A98102 /* SubscribeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874D59C1C2216DB00A98102 /* SubscribeTest.swift */; };
 		4874D59F1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874D59E1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift */; };
 		4874D5A31C221CD000A98102 /* ALToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4874D5A21C221CD000A98102 /* ALToastView.m */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		485345061C23528400D409F3 /* PublishStreamImageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublishStreamImageTest.swift; path = Tests/PublishStreamImage/PublishStreamImageTest.swift; sourceTree = "<group>"; };
 		485345081C23552F00D409F3 /* CameraSwapTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraSwapTest.swift; path = Tests/CameraSwap/CameraSwapTest.swift; sourceTree = "<group>"; };
-		4853450A1C2357D200D409F3 /* SubscriberBandwidthTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriberBandwidthTest.swift; path = Tests/SubscribeBandwidth/SubscriberBandwidthTest.swift; sourceTree = "<group>"; };
 		4874D59C1C2216DB00A98102 /* SubscribeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscribeTest.swift; path = Tests/Subscribe/SubscribeTest.swift; sourceTree = "<group>"; };
 		4874D59E1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptiveBitrateControllerTest.swift; path = Tests/AdaptiveBitrate/AdaptiveBitrateControllerTest.swift; sourceTree = "<group>"; };
 		4874D5A01C221CCF00A98102 /* R5ProTestbed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "R5ProTestbed-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				926794F61D06191E004B0BCD /* PublishStreamManagerTest.swift */,
 				4874D59C1C2216DB00A98102 /* SubscribeTest.swift */,
 				48BF80B21C246F6D000E996E /* SubscribeAspectRatioTest.swift */,
-				4853450A1C2357D200D409F3 /* SubscriberBandwidthTest.swift */,
 				926794FA1D061968004B0BCD /* SubscribeCluster.swift */,
 				92E13BF31CDD165800DA5783 /* SubscribeNoViewTest.swift */,
 				92EAA9DA1D0734EA00B2CE46 /* SubscribeAutoReconnectTest.swift */,
@@ -284,7 +281,6 @@
 				92E13BF41CDD165800DA5783 /* SubscribeNoViewTest.swift in Sources */,
 				926794FF1D06199E004B0BCD /* TwoWayTest.swift in Sources */,
 				48DFEDD51C21C18F0040B624 /* Home.swift in Sources */,
-				4853450B1C2357D200D409F3 /* SubscriberBandwidthTest.swift in Sources */,
 				926794FD1D061983004B0BCD /* SubscribeRemoteCallTest.swift in Sources */,
 				4874D59F1C221B9500A98102 /* AdaptiveBitrateControllerTest.swift in Sources */,
 				48DFEDAC1C21BBC60040B624 /* AppDelegate.swift in Sources */,
