@@ -180,17 +180,6 @@
 			<key>class</key>
 			<string>SubscribeAspectRatioTest</string>
 		</dict>
-		<key>subscribe - BandwidthTest</key>
-		<dict>
-			<key>description</key>
-			<string>Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.</string>
-			<key>LocalProperties</key>
-			<dict/>
-			<key>name</key>
-			<string>Subscribe - Bandwidth Test</string>
-			<key>class</key>
-			<string>SubscriberBandwidthTest</string>
-		</dict>
 		<key>subscribe - Cluster</key>
 		<dict>
 			<key>description</key>
