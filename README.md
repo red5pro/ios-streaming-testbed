@@ -55,10 +55,7 @@ Once you have modified your settings, you can run the application for simulator 
 
 | **[Aspect Ratio](R5ProTestbed/Tests/SubscribeAspectRatio)**
 | :----
-| *Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.* 
-|
-| **[Bandwidth Test](R5ProTestbed/Tests/SubscriberBadwidth)**
-| *Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.*  
+| *Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.*  
 |
 | **[Cluster](R5ProTestbed/Tests/SubscribeCluster)** 
 | *An example of conecting to a cluster server.*
