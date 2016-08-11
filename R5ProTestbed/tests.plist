@@ -56,7 +56,7 @@
 				<key>camera_width</key>
 				<integer>1920</integer>
 				<key>camera_height</key>
-				<string>1080</string>
+				<integer>1080</integer>
 				<key>bitrate</key>
 				<integer>4500</integer>
 			</dict>
@@ -74,7 +74,7 @@
 				<key>camera_width</key>
 				<integer>1920</integer>
 				<key>camera_height</key>
-				<string>1080</string>
+				<integer>1080</integer>
 				<key>bitrate</key>
 				<integer>4800</integer>
 			</dict>
