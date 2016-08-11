@@ -7,7 +7,7 @@
 		<key>bitrate</key>
 		<integer>750</integer>
 		<key>host</key>
-		<string>174.129.52.244</string>
+		<string>0.0.0.0</string>
 		<key>buffer_time</key>
 		<real>0.05</real>
 		<key>port</key>
