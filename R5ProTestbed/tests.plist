@@ -5,7 +5,7 @@
 	<key>GlobalProperties</key>
 	<dict>
 		<key>bitrate</key>
-		<integer>400</integer>
+		<integer>750</integer>
 		<key>host</key>
 		<string>0.0.0.0</string>
 		<key>buffer_time</key>
@@ -19,9 +19,9 @@
 		<key>context</key>
 		<string>live</string>
 		<key>camera_width</key>
-		<integer>426</integer>
+		<integer>640</integer>
 		<key>camera_height</key>
-		<integer>240</integer>
+		<integer>360</integer>
 		<key>debug_view</key>
 		<true/>
 		<key>video_on</key>
@@ -164,6 +164,8 @@
 		<dict>
 			<key>LocalProperties</key>
 			<dict/>
+			<key>buffer_time</key>
+			<integer>0</integer>
 			<key>name</key>
 			<string>Subscribe</string>
 			<key>class</key>
