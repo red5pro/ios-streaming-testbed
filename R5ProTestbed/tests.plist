@@ -236,15 +236,6 @@
 			<key>class</key>
 			<string>SubscribeRemoteCallTest</string>
 		</dict>
-		<key>subscribe - SetFrame</key>
-		<dict>
-			<key>LocalProperties</key>
-			<dict/>
-			<key>name</key>
-			<string>Subscribe - Set Frame Size</string>
-			<key>class</key>
-			<string>SubscribeSetSizeTest</string>
-		</dict>
 		<key>subscribe - Stream Manager</key>
 		<dict>
 			<key>description</key>
